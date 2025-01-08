@@ -11,13 +11,13 @@ const GetInTouch = () => {
       viewport={{ once: true }}
     >
       <motion.h3
-        className="text-lg"
+        className="text-3xl"
         initial={{ y: -20 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        Stay in touch!
+        Connect with me!
       </motion.h3>
       <motion.div
         className="flex gap-4"
@@ -43,6 +43,16 @@ const GetInTouch = () => {
           whileTap={{ scale: 0.9 }}
         >
           <i className="bi bi-envelope-fill text-2xl"></i>
+        </motion.a>
+        <motion.a
+          href="https://github.com/Adrin-Bershik-C-J"
+          className="text-gray-300"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2, color: "#6e5494" }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <i className="bi bi-github text-2xl"></i>
         </motion.a>
       </motion.div>
     </motion.footer>

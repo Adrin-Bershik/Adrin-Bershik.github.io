@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Code, Database, Globe, Layout, Cpu, Server, Wifi } from "lucide-react";
+import Resume from "../assets/Resume.pdf"
 
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState(0);
@@ -57,7 +58,7 @@ const Profile = () => {
           Bershik
         </motion.p>
 
-        <motion.div
+        {/* <motion.div
           className="flex gap-2 items-center mt-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -86,7 +87,7 @@ const Profile = () => {
               <i className="bi bi-github"></i>
             </motion.a>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex gap-4 justify-center md:justify-end mt-6"
@@ -104,8 +105,8 @@ const Profile = () => {
             </button>
           </motion.a>
           <motion.a
-            href="../assets/Resume.pdf"
-            download="Resume.pdf"
+            href={Resume}
+            download="Resume"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

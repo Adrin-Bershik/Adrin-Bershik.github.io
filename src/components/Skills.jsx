@@ -49,7 +49,7 @@ const Skills = () => {
 
   return (
     <motion.section
-      className="px-6 lg:px-[13rem] py-[2.4rem] bg-[#1D1E24] text-white"
+      className="px-6 mr-5 lg:px-[13rem] py-[2.4rem] bg-[#1D1E24] text-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}

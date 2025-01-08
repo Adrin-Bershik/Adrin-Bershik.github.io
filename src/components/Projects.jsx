@@ -8,13 +8,7 @@ const Projects = () => {
       title: "Homeopathy Clinic Website and App",
       description:
         "Developed a website and mobile app for a homeopathy clinic, allowing patients to book appointments and consult doctors via video calls. Integrated an ML model to classify patients as acute or chronic based on initial symptom input. Patients can make appointments and track their medical records. Doctors can track patients with the call log.",
-      techStack: [
-        "React Native",
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-      ],
+      techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
     },
     {
       duration: "2023 - 2024",
@@ -28,7 +22,7 @@ const Projects = () => {
       title: "Bonafide Certificate Request System",
       description:
         "Developed a digital solution to automate the bonafide certificate request process, reducing manual paperwork. Led the back-end implementation with SQL and PHP, and designed the front-end using HTML and CSS. Reached the finals of SREC Hackathon 1.0, demonstrating innovation and problem-solving skills.",
-      techStack: ["HTML5", "CSS", "JS", "PHP", "MySQL"],
+      techStack: ["HTML5", "CSS3", "JS", "PHP", "MySQL"],
     },
   ];
 
