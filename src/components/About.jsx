@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.section 
+    <motion.section
       className="px-6 lg:px-[13rem] py-[2.4rem]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <motion.h1 
+      <motion.h1
         className="text-3xl"
         initial={{ x: -50 }}
         whileInView={{ x: 0 }}
@@ -20,22 +20,32 @@ const About = () => {
         About
       </motion.h1>
       <br />
-      <motion.p 
-        className="text-2xl font-quicksand"
+      <motion.p
+        className="text-2xl font-quicksand text-justify"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        Hello! I'm Adrin, a passionate and forward-thinking student with
-        hands-on experience in developing full-stack projects using modern
-        technologies. Motivated by the desire to explore
-        new trends and technologies, I am focused on solving complex problems
-        and building scalable web applications. I thrive in collaborative
-        environments and am committed to delivering impactful solutions that
-        meet user and business needs. Always striving to grow professionally,
-        I'm eager to contribute to meaningful projects and reach new heights in
-        the tech industry.
+        <p>
+          Hello! I'm <span className="font-bold text-[#1EA7E7]">Adrin</span>, a
+          passionate and forward-thinking student with hands-on experience in
+          developing full-stack projects using modern technologies.
+        </p>
+        <br />
+        <p>
+          Motivated by the desire to explore new trends and technologies, I am
+          focused on solving complex problems and building scalable web
+          applications.
+        </p>
+        <br />
+        <p>
+          I thrive in collaborative environments and am committed to delivering
+          impactful solutions that meet user and business needs. Always striving
+          to grow professionally, I'm eager to contribute to meaningful projects
+          and reach new heights in the tech industry.
+        </p>
+        <br />
       </motion.p>
     </motion.section>
   );

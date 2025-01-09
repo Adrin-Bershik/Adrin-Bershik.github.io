@@ -49,14 +49,14 @@ const Skills = () => {
 
   return (
     <motion.section
-      className="px-6 mr-5 lg:px-[13rem] py-[2.4rem] bg-[#1D1E24] text-white"
+      className="px-4 sm:px-6 lg:px-[13rem] py-12 bg-[#1D1E24] text-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
       <motion.h3
-        className="text-3xl mb-12 sixtyfour-styled"
+        className="text-3xl mb-12"
         initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ const Skills = () => {
         Skills
       </motion.h3>
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -74,7 +74,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="bg-[#202537] w-40 h-40 flex flex-col items-center justify-center rounded-md"
+            className="bg-[#202537] p-4 flex flex-col items-center justify-center rounded-lg shadow-lg min-h-[160px]"
             variants={itemVariants}
             whileHover={{
               scale: 1.05,
@@ -85,12 +85,12 @@ const Skills = () => {
             <motion.img
               src={skill.icon}
               alt={`${skill.name} icon`}
-              className="h-20 w-20 mb-2"
+              className="h-16 w-16 mb-4 object-contain"
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.8 }}
             />
             <motion.h4
-              //className="font-quicksand"
+              className="text-center text-sm sm:text-base"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
