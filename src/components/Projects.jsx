@@ -9,6 +9,7 @@ const Projects = () => {
       description:
         "Developed a website and mobile app for a homeopathy clinic, allowing patients to book appointments and consult doctors via video calls. Integrated an ML model to classify patients as acute or chronic based on initial symptom input. Patients can make appointments and track their medical records. Doctors can track patients with the call log.",
       techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
+      repoLink: "https://github.com/Adrin-Bershik-C-J/maars",
     },
     {
       duration: "2023 - 2024",
@@ -16,6 +17,7 @@ const Projects = () => {
       description:
         "Developed a tourism app on Android Studio for Coimbatore, featuring tourist spots, hotels, and restaurants. Integrated location-based features for a seamless user experience. Ensured high-quality UI/UX. Currently under copyright process and to be uploaded to Play Store.",
       techStack: ["Android Studio", "Firebase"],
+      repoLink: "https://github.com/Adrin-Bershik-C-J/CBEGo",
     },
     {
       duration: "2024",
@@ -23,6 +25,16 @@ const Projects = () => {
       description:
         "Developed a digital solution to automate the bonafide certificate request process, reducing manual paperwork. Led the back-end implementation with SQL and PHP, and designed the front-end using HTML and CSS. Reached the finals of SREC Hackathon 1.0, demonstrating innovation and problem-solving skills.",
       techStack: ["HTML5", "CSS3", "JS", "PHP", "MySQL"],
+      repoLink:
+        "https://github.com/Adrin-Bershik/Digitized-BonafideCertificate-RequestSystem",
+    },
+    {
+      duration: "Jun 2024 - Jul 2024",
+      title: "Tectzo Solutions Private Limited",
+      description:
+        "Developed a transport management web app, utilizing React Native, ReactJS, NodeJS, ExpressJS, and MongoDB with roles for Drivers, Managers, and Customers. Facilitates vehicle rental, efficient enterprise vehicle management, and parcel servicing, streamlining the transportation process for all users. Currently in the final stage of development, ready for deployment.",
+      techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
+      repoLink: "https://github.com/Adrin-Bershik-C-J/tectzo",
     },
   ];
 
@@ -87,6 +99,18 @@ const Projects = () => {
                   </motion.span>
                 ))}
               </div>
+              <motion.a
+                href={project.repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 text-sm mt-2"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                View on GitHub
+              </motion.a>
             </motion.div>
           </div>
         </motion.section>

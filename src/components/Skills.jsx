@@ -10,7 +10,7 @@ import node from "../assets/node.svg";
 import express from "../assets/express-original.svg";
 import mongodb from "../assets/mongodb-original.svg";
 import github from "../assets/github.svg";
-import mysql from "../assets/mysql.png";
+import git from "../assets/git.svg";
 import angular from "../assets/angular.svg";
 
 const Skills = () => {
@@ -24,9 +24,9 @@ const Skills = () => {
     { name: "NodeJS", icon: node },
     { name: "ExpressJS", icon: express },
     { name: "MongoDB", icon: mongodb },
+    { name: "Git", icon: git },
     { name: "GitHub", icon: github },
     { name: "C", icon: cIcon },
-    { name: "MySQL", icon: mysql },
   ];
 
   const containerVariants = {
