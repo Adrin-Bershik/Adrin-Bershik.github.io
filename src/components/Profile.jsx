@@ -91,7 +91,7 @@ const Profile = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.div
-          className="relative w-[22rem] h-[22rem] sm:w-[27rem] sm:h-[27rem] bg-gray-100 dark:bg-[#1D1E24] rounded-lg overflow-hidden"
+          className="relative w-[22rem] h-[22rem] sm:w-[27rem] sm:h-[27rem] bg-white dark:bg-[#1D1E24] rounded-lg overflow-hidden"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
@@ -100,7 +100,7 @@ const Profile = () => {
             {[...Array(20)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute h-px w-full bg-gray-400 dark:bg-[#A8B9CF]"
+                className="absolute h-px w-full bg-white dark:bg-[#A8B9CF]"
                 style={{ top: `${i * 5}%`, left: 0 }}
                 animate={{
                   x: [-1000, 1000],
