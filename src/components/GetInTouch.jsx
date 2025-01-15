@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const GetInTouch = () => {
   return (
     <motion.footer
-      className="flex flex-col items-center gap-4 py-6 text-gray-300"
+      className="flex flex-col items-center gap-4 py-6 bg-white dark:bg-[#1D1E24] text-black dark:text-gray-300"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -28,7 +28,7 @@ const GetInTouch = () => {
       >
         <motion.a
           href="https://www.linkedin.com/in/adrin-bershik-95b919256"
-          className="text-gray-300"
+          className="text-gray-700 dark:text-gray-300"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2, color: "#0A66C2" }}
@@ -38,7 +38,7 @@ const GetInTouch = () => {
         </motion.a>
         <motion.a
           href="mailto:adrinbershik.2201008@srec.ac.in"
-          className="text-gray-300"
+          className="text-gray-700 dark:text-gray-300"
           whileHover={{ scale: 1.2, color: "#EA4335" }}
           whileTap={{ scale: 0.9 }}
         >
@@ -46,7 +46,7 @@ const GetInTouch = () => {
         </motion.a>
         <motion.a
           href="https://github.com/Adrin-Bershik-C-J"
-          className="text-gray-300"
+          className="text-gray-700 dark:text-gray-300"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2, color: "#6e5494" }}

@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Code, Database, Globe, Layout, Cpu, Server, Wifi } from "lucide-react";
-import Resume from "../assets/Resume.pdf"
+import Resume from "../assets/Resume.pdf";
 
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState(0);
 
-  // Array of tech icons with labels
   const techIcons = [
     { icon: Code, label: "Development" },
     { icon: Database, label: "Database" },
@@ -17,7 +16,6 @@ const Profile = () => {
     { icon: Wifi, label: "Network" },
   ];
 
-  // Rotate through icons automatically
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIcon((prev) => (prev + 1) % techIcons.length);
@@ -34,7 +32,7 @@ const Profile = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.p
-          className="text-[1.3rem]"
+          className="text-[1.3rem] text-black dark:text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -42,7 +40,7 @@ const Profile = () => {
           Hey guys! This is
         </motion.p>
         <motion.p
-          className="text-[4rem] sm:text-[5.5rem] text-[#1EA7E7]"
+          className="text-[4rem] sm:text-[5.5rem] text-[#1EA7E7] dark:text-[#1EA7E7]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -50,44 +48,13 @@ const Profile = () => {
           Adrin
         </motion.p>
         <motion.p
-          className="text-[4rem] sm:text-[5.5rem] text-[#1EA7E7]"
+          className="text-[4rem] sm:text-[5.5rem] text-[#1EA7E7] dark:text-[#1EA7E7]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
           Bershik
         </motion.p>
-
-        {/* <motion.div
-          className="flex gap-2 items-center mt-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          <p className="text-[1.3rem]">Follow me on</p>
-          <div className="flex space-x-3">
-            <motion.a
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              href="https://www.linkedin.com/in/adrinbershik/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg hover:text-[#0A66C2] transition"
-            >
-              <i className="bi bi-linkedin"></i>
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              href="https://github.com/Adrin-Bershik-C-J"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg hover:text-[#171515] transition"
-            >
-              <i className="bi bi-github"></i>
-            </motion.a>
-          </div>
-        </motion.div> */}
 
         <motion.div
           className="flex gap-4 justify-center md:justify-end mt-6"
@@ -100,7 +67,7 @@ const Profile = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="bg-[#A8B9CF] w-28 h-10 rounded-md hover:bg-[#95A5C7] transition">
+            <button className="bg-gray-300 dark:bg-[#A8B9CF] w-28 h-10 rounded-md hover:bg-gray-400 dark:hover:bg-[#95A5C7] text-black dark:text-white transition">
               Mail Me
             </button>
           </motion.a>
@@ -110,7 +77,7 @@ const Profile = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="text-[#A8B9CF] w-32 h-10 rounded-md border border-[#A8B9CF] bg-[#1D1E24] hover:text-[#ffffff] hover:bg-[#A8B9CF] transition">
+            <button className="text-gray-600 dark:text-[#A8B9CF] w-32 h-10 rounded-md border border-gray-600 dark:border-[#A8B9CF] bg-gray-100 dark:bg-[#1D1E24] hover:text-black dark:hover:text-white hover:bg-gray-300 dark:hover:bg-[#A8B9CF] transition">
               Download CV
             </button>
           </motion.a>
@@ -124,7 +91,7 @@ const Profile = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.div
-          className="relative w-[22rem] h-[22rem] sm:w-[27rem] sm:h-[27rem] bg-[#1D1E24] rounded-lg overflow-hidden"
+          className="relative w-[22rem] h-[22rem] sm:w-[27rem] sm:h-[27rem] bg-gray-100 dark:bg-[#1D1E24] rounded-lg overflow-hidden"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
@@ -133,7 +100,7 @@ const Profile = () => {
             {[...Array(20)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute h-px w-full bg-[#A8B9CF]"
+                className="absolute h-px w-full bg-gray-400 dark:bg-[#A8B9CF]"
                 style={{ top: `${i * 5}%`, left: 0 }}
                 animate={{
                   x: [-1000, 1000],
@@ -164,7 +131,7 @@ const Profile = () => {
             >
               {React.createElement(techIcons[activeIcon].icon, {
                 size: 120,
-                className: "text-[#A8B9CF]",
+                className: "text-gray-600 dark:text-[#A8B9CF]",
               })}
             </motion.div>
             <motion.p
@@ -173,7 +140,7 @@ const Profile = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="mt-4 text-[#A8B9CF] text-xl font-semibold"
+              className="mt-4 text-gray-600 dark:text-[#A8B9CF] text-xl font-semibold"
             >
               {techIcons[activeIcon].label}
             </motion.p>
@@ -210,7 +177,7 @@ const Profile = () => {
               >
                 {React.createElement(tech.icon, {
                   size: 24,
-                  className: "text-[#A8B9CF]",
+                  className: "text-gray-600 dark:text-[#A8B9CF]",
                 })}
               </motion.div>
             </motion.div>

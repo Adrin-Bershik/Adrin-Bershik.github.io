@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      duration: "2024 - Current",
-      title: "Homeopathy Clinic Website and App",
-      description:
-        "Developed a website and mobile app for a homeopathy clinic, allowing patients to book appointments and consult doctors via video calls. Integrated an ML model to classify patients as acute or chronic based on initial symptom input. Patients can make appointments and track their medical records. Doctors can track patients with the call log.",
-      techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
-    },
-    {
       duration: "2023 - 2024",
       title: "Tourism App For Coimbatore",
       description:
@@ -31,11 +24,18 @@ const Projects = () => {
         "Developed a transport management web app, utilizing React Native, ReactJS, NodeJS, ExpressJS, and MongoDB with roles for Drivers, Managers, and Customers. Facilitates vehicle rental, efficient enterprise vehicle management, and parcel servicing, streamlining the transportation process for all users. Currently in the final stage of development, ready for deployment.",
       techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
     },
+    {
+      duration: "2024 - Current",
+      title: "Homeopathy Clinic Website and App",
+      description:
+        "Developed a website and mobile app for a homeopathy clinic, allowing patients to book appointments and consult doctors via video calls. Integrated an ML model to classify patients as acute or chronic based on initial symptom input. Patients can make appointments and track their medical records. Doctors can track patients with the call log.",
+      techStack: ["ReactJS", "React Native", "NodeJS", "ExpressJS", "MongoDB"],
+    },
   ];
 
   return (
     <motion.div
-      className="px-6 lg:px-[13rem] py-[2.4rem] bg-[#1D1E24] text-white"
+      className="px-6 lg:px-[13rem] py-[2.4rem] bg-white dark:bg-[#1D1E24] text-black dark:text-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -54,7 +54,7 @@ const Projects = () => {
       {projects.map((project, index) => (
         <motion.section
           key={index}
-          className="flex flex-col lg:flex-row lg:gap-4 mb-8 border-b border-gray-700 pb-4"
+          className="flex flex-col lg:flex-row lg:gap-4 mb-8 border-b border-gray-300 dark:border-gray-700 pb-4"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -67,7 +67,9 @@ const Projects = () => {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-400">{project.duration}</p>
+            <p className="text-gray-600 dark:text-gray-400">
+              {project.duration}
+            </p>
           </motion.div>
 
           <div className="lg:w-1/2">
@@ -78,13 +80,17 @@ const Projects = () => {
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h1 className="text-lg">{project.title}</h1>
-              <p className="text-sm font-quicksand">{project.description}</p>
+              <h1 className="text-lg text-black dark:text-white">
+                {project.title}
+              </h1>
+              <p className="text-sm font-quicksand text-gray-700 dark:text-gray-300">
+                {project.description}
+              </p>
               <div className="flex gap-2 flex-wrap">
                 {project.techStack.map((tech, techIndex) => (
                   <motion.span
                     key={techIndex}
-                    className="bg-[#A8B9CF] text-sm px-3 py-1 rounded-md"
+                    className="bg-gray-300 dark:bg-[#A8B9CF] text-sm px-3 py-1 rounded-md"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     transition={{ delay: 0.4 + techIndex * 0.1 }}

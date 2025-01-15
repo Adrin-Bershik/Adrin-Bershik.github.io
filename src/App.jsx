@@ -7,7 +7,7 @@ import GetInTouch from "./components/GetInTouch";
 
 function App() {
   return (
-    <div className="bg-[#1D1E24] text-[#fff] font-protest">
+    <div className="dark:bg-[#1D1E24] bg-white dark:text-[#fff] font-protest">
       <Navbar />
       <section id="home">
         <Profile />

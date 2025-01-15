@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.section
-      className="px-6 lg:px-[13rem] py-[2.4rem]"
+      className="px-6 lg:px-[13rem] py-[2.4rem] bg-white dark:bg-[#1D1E24] text-black dark:text-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
       <motion.h1
-        className="text-3xl"
+        className="text-3xl text-black dark:text-white"
         initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
@@ -21,14 +21,14 @@ const About = () => {
       </motion.h1>
       <br />
       <motion.p
-        className="text-2xl font-quicksand text-justify"
+        className="text-2xl font-quicksand text-justify text-gray-700 dark:text-gray-300"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <p>
-          Hello! I'm <span className="font-bold text-[#1EA7E7]">Adrin</span>, a
+          Hello! I'm <span className="font-bold text-[#1EA7E7] dark:text-[#1EA7E7]">Adrin</span>, a
           passionate and forward-thinking student with hands-on experience in
           developing full-stack projects using modern technologies.
         </p>

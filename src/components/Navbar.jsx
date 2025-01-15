@@ -34,14 +34,14 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="relative z-50" // Added z-50 to make navbar appear above other content
+      className="relative z-50"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
       <div className="flex items-center justify-between cursor-default px-4 py-5 md:justify-around">
         <motion.h1
-          className="font-sixtyfour text-[#1EA7E7] text-2xl"
+          className="font-sixtyfour text-[#1EA7E7] dark:text-[#1EA7E7] text-2xl"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -58,7 +58,7 @@ const Navbar = () => {
             >
               <a
                 href={item.href}
-                className="hover:text-[#1EA7E7] transition duration-300"
+                className="transition duration-300 hover:text-[#1EA7E7] dark:hover:text-[#1EA7E7] text-black text-xl dark:text-white"
               >
                 {item.label}
               </a>
@@ -81,15 +81,15 @@ const Navbar = () => {
             {isMenuOpen && (
               <motion.ul
                 ref={menuRef}
-                className="absolute right-0 top-full mt-2 w-48 bg-[#1D1E24] rounded-lg border border-gray-700 shadow-lg py-2"
+                className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-[#1D1E24] rounded-lg border border-gray-300 dark:border-gray-700 shadow-lg py-2"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
                 style={{
-                  zIndex: 50, // Ensuring dropdown has the same z-index as nav
-                  position: "fixed", // Changed to fixed positioning
-                  top: "4rem", // Adjust this value based on your navbar height
+                  zIndex: 50,
+                  position: "fixed",
+                  top: "4rem",
                   right: "8px",
                 }}
               >
@@ -102,7 +102,7 @@ const Navbar = () => {
                   >
                     <a
                       href={item.href}
-                      className="block px-4 py-2 hover:bg-gray-700 hover:text-[#1EA7E7] transition duration-300"
+                      className="block px-4 py-2 transition duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 text-black dark:text-white hover:text-[#1EA7E7] dark:hover:text-[#1EA7E7]"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}

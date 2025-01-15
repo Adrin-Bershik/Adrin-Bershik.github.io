@@ -49,14 +49,14 @@ const Skills = () => {
 
   return (
     <motion.section
-      className="px-4 sm:px-6 lg:px-[13rem] py-12 bg-[#1D1E24] text-white"
+      className="px-4 sm:px-6 lg:px-[13rem] py-12 bg-white dark:bg-[#1D1E24] text-black dark:text-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
       <motion.h3
-        className="text-3xl mb-12"
+        className="text-3xl mb-12 text-black dark:text-white"
         initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
@@ -74,7 +74,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="bg-[#202537] p-4 flex flex-col items-center justify-center rounded-lg shadow-lg min-h-[160px]"
+            className="bg-gray-200 dark:bg-[#202537] p-4 flex flex-col items-center justify-center rounded-lg shadow-lg min-h-[160px]"
             variants={itemVariants}
             whileHover={{
               scale: 1.05,
@@ -90,7 +90,7 @@ const Skills = () => {
               transition={{ duration: 0.8 }}
             />
             <motion.h4
-              className="text-center text-sm sm:text-base"
+              className="text-center text-sm sm:text-base text-black dark:text-white"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
