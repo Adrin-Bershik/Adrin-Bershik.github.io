@@ -100,7 +100,7 @@ const Profile = () => {
             {[...Array(20)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute h-px w-full bg-white dark:bg-[#A8B9CF]"
+                className="absolute h-px w-full bg-black dark:bg-[#A8B9CF]"
                 style={{ top: `${i * 5}%`, left: 0 }}
                 animate={{
                   x: [-1000, 1000],
