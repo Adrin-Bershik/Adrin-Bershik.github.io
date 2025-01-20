@@ -39,7 +39,7 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex items-center justify-between cursor-default px-4 py-5 md:justify-around">
+      <div className="flex items-center justify-between cursor-default px-4 py-5 md:justify-between md:px-10 ">
         <motion.h1
           className="font-sixtyfour text-[#1EA7E7] dark:text-[#1EA7E7] text-2xl"
           whileHover={{ scale: 1.1 }}
