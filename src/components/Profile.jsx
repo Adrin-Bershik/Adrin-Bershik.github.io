@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Code, Database, Globe, Layout, Cpu, Server, Wifi } from "lucide-react";
+import {
+  Code,
+  Database,
+  Globe,
+  Layout,
+  Cpu,
+  Server,
+  Wifi,
+  Download,
+} from "lucide-react";
 import Resume from "../assets/Resume.pdf";
 
 const Profile = () => {
@@ -143,8 +152,12 @@ const Profile = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="text-gray-600 dark:text-[#A8B9CF] w-32 h-10 rounded-md border border-gray-600 dark:border-[#A8B9CF] bg-gray-100 dark:bg-[#1D1E24] hover:text-black dark:hover:text-white hover:bg-gray-300 dark:hover:bg-[#A8B9CF] transition">
-              Download CV
+            <button className="group flex gap-2 items-center justify-center text-gray-600 dark:text-[#A8B9CF] w-28 h-10 rounded-md border border-gray-600 dark:border-[#A8B9CF] bg-gray-100 dark:bg-[#1D1E24] hover:text-black dark:hover:text-white hover:bg-gray-300 dark:hover:bg-[#A8B9CF] transition">
+              <Download
+                size={16}
+                className="text-gray-600 dark:text-[#A8B9CF] group-hover:text-black dark:group-hover:text-white"
+              />
+              Resume
             </button>
           </motion.a>
         </motion.div>
