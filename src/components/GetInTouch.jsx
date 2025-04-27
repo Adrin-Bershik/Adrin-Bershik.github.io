@@ -33,7 +33,7 @@ const GetInTouch = () => {
       >
         {/* LinkedIn */}
         <motion.a
-          href="https://www.linkedin.com/in/adrin-bershik-95b919256"
+          href="https://www.linkedin.com/in/adrinbershik"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -67,11 +67,7 @@ const GetInTouch = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <img
-            src={github}
-            alt="GitHub"
-            className="w-8 h-8 object-contain"
-          />
+          <img src={github} alt="GitHub" className="w-8 h-8 object-contain" />
         </motion.a>
 
         {/* Linktree */}
