@@ -28,22 +28,29 @@ const About = () => {
         viewport={{ once: true }}
       >
         <p>
-          Hello! I'm <span className="font-bold text-[#1EA7E7] dark:text-[#1EA7E7]">Adrin</span>, a
-          passionate and forward-thinking student with hands-on experience in
-          developing full-stack projects using modern technologies.
+          Hello! I'm{" "}
+          <span className="font-bold text-[#1EA7E7] dark:text-[#1EA7E7]">
+            Adrin
+          </span>
+          , a passionate and forward-thinking student at Sri Ramakrishna
+          Engineering College. With a strong foundation in full-stack
+          development, I am driven by a desire to create innovative, scalable,
+          and user-centric solutions that can shape the future of technology.
         </p>
         <br />
         <p>
-          Motivated by the desire to explore new trends and technologies, I am
-          focused on solving complex problems and building scalable web
-          applications.
+          I thrive on exploring new trends and technologies, constantly learning
+          and adapting to the ever-evolving landscape of the tech world. My goal
+          is to leverage my skills to make a meaningful impact while
+          collaborating with like-minded professionals, mentors, and potential
+          partners who share my enthusiasm for innovation.
         </p>
         <br />
         <p>
-          I thrive in collaborative environments and am committed to delivering
-          impactful solutions that meet user and business needs. Always striving
-          to grow professionally, I'm eager to contribute to meaningful projects
-          and reach new heights in the tech industry.
+          Always motivated by the challenge of pushing boundaries, I’m committed
+          to continuous growth and to contributing to projects that foster
+          progress and change. Let's connect and collaborate to build the tech
+          of tomorrow!
         </p>
         <br />
       </motion.p>

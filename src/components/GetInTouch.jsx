@@ -1,5 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import linktree from "../assets/linktree.png";
+import github from "../assets/githubIcon.png";
+import linkedin from "../assets/linkedin.png";
+import gmail from "../assets/gmail.png";
 
 const GetInTouch = () => {
   return (
@@ -19,6 +23,7 @@ const GetInTouch = () => {
       >
         Connect with me!
       </motion.h3>
+
       <motion.div
         className="flex gap-4"
         initial={{ scale: 0 }}
@@ -26,33 +31,62 @@ const GetInTouch = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         viewport={{ once: true }}
       >
+        {/* LinkedIn */}
         <motion.a
           href="https://www.linkedin.com/in/adrin-bershik-95b919256"
-          className="text-gray-700 dark:text-gray-300"
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{ scale: 1.2, color: "#0A66C2" }}
+          whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <i className="bi bi-linkedin text-2xl"></i>
+          <img
+            src={linkedin}
+            alt="LinkedIn"
+            className="w-7 h-7 object-contain"
+          />
         </motion.a>
+
+        {/* Gmail */}
         <motion.a
           href="mailto:adrinbershik.2201008@srec.ac.in"
-          className="text-gray-700 dark:text-gray-300"
-          whileHover={{ scale: 1.2, color: "#EA4335" }}
+          whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <i className="bi bi-envelope-fill text-2xl"></i>
+          <img
+            src={gmail}
+            alt="Gmail"
+            className="w-8 h-8 object-contain rounded-full"
+          />
         </motion.a>
+
+        {/* GitHub */}
         <motion.a
           href="https://github.com/Adrin-Bershik-C-J"
-          className="text-gray-700 dark:text-gray-300"
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{ scale: 1.2, color: "#6e5494" }}
+          whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <i className="bi bi-github text-2xl"></i>
+          <img
+            src={github}
+            alt="GitHub"
+            className="w-8 h-8 object-contain"
+          />
+        </motion.a>
+
+        {/* Linktree */}
+        <motion.a
+          href="https://linktr.ee/adrinbershik"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <img
+            src={linktree}
+            alt="Linktree"
+            className="w-7 h-7 object-contain"
+          />
         </motion.a>
       </motion.div>
     </motion.footer>

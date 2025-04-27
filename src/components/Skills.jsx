@@ -5,7 +5,7 @@ import cssIcon from "../assets/css.png";
 import jsIcon from "../assets/js.png";
 import tailwindIcon from "../assets/Tailwind_CSS_Logo.svg.png";
 import react from "../assets/react.svg";
-import cIcon from "../assets/c.png";
+import javaIcon from "../assets/java.png";
 import node from "../assets/node.svg";
 import express from "../assets/express-original.svg";
 import mongodb from "../assets/mongodb-original.svg";
@@ -26,7 +26,7 @@ const Skills = () => {
     { name: "MongoDB", icon: mongodb },
     { name: "Git", icon: git },
     { name: "GitHub", icon: github },
-    { name: "C", icon: cIcon },
+    { name: "Java", icon: javaIcon },
   ];
 
   const containerVariants = {

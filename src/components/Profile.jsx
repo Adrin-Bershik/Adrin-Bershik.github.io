@@ -112,7 +112,7 @@ const Profile = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Hey guys! This is
+          Hello! This is
         </motion.p>
         <motion.p
           className="text-[4rem] sm:text-[5.5rem] text-[#1EA7E7] dark:text-[#1EA7E7]"
